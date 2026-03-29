@@ -2,186 +2,132 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Yulia Bykova - Wedding Agency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Songti+TC:wght@400;700&family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
-
+  <title>Wedding Landing</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ====== Секция 1 - Hero ====== -->
+<!-- ====== Секция 1 ====== -->
 <section class="hero">
-  <header class="hero__header">
+  <div class="hero__header">
     <div class="menu-left">
-      <img src="https://via.placeholder.com/50" alt="Logo" class="logo" onclick="location.reload()">
-      <nav class="menu-links-left">
-        <a href="#about">ОБО МНЕ</a>
+      <img src="logo.jpg" alt="Лого" class="logo" onclick="location.reload()">
+      <div class="menu-links-left">
+        <a href="#about-me">ОБО МНЕ</a>
         <a href="#why-me">ПОЧЕМУ Я?</a>
-      </nav>
+      </div>
     </div>
-
     <div class="menu-center">
-      <h1 class="hero__name">YULIA BYKOVA</h1>
-      <p class="hero__subtitle">ОРГАНИЗАЦИЯ МЕРОПРИЯТИЙ</p>
+      <div class="hero__name songti">YULIA BYKOVA</div>
+      <div class="hero__subtitle">ОРГАНИЗАЦИЯ МЕРОПРИЯТИЙ</div>
     </div>
-
     <div class="menu-right">
-      <nav class="menu-links-right">
+      <div class="menu-links-right">
         <a href="#services">УСЛУГИ</a>
         <a href="#offers">ПРЕДЛОЖЕНИЯ</a>
         <a href="#booking">БРОНЬ</a>
-      </nav>
+      </div>
     </div>
-  </header>
-
+  </div>
   <hr class="header-line">
 
   <div class="carousel-container">
-    <button class="carousel-btn prev">&lt;</button>
     <div class="carousel">
       <div class="carousel-track">
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 1"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 2"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 3"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 4"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 5"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 6"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 7"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 8"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 9"></div>
-        <div class="carousel-item"><img src="https://via.placeholder.com/531x524" alt="Фото 10"></div>
+        <div class="carousel-item center"><img src="photo1.jpg" alt=""></div>
+        <div class="carousel-item"><img src="photo2.jpg" alt=""></div>
+        <div class="carousel-item"><img src="photo3.jpg" alt=""></div>
+        <div class="carousel-item"><img src="photo4.jpg" alt=""></div>
       </div>
     </div>
-    <button class="carousel-btn next">&gt;</button>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
   </div>
 
   <div class="hero-text">
-    <p class="line1"><span class="songti">Я ПОМОГУ СДЕЛАТЬ ВАШ ПРАЗДНИК</span> <span class="gogol">незабываемым,</span></p>
-    <p class="line2"><span class="songti">ВОПЛОЩАЯ САМЫЕ</span> <span class="gogol">яркие идеи В ЖИЗНЬ.</span></p>
-    <a href="#calculate" class="btn-outline">РАССЧИТАТЬ СТОИМОСТЬ</a>
+    <div class="line1 songti">Я ПОМОГУ СДЕЛАТЬ ВАШ ПРАЗДНИК</div>
+    <div class="line2 gogol">незабываемым,</div>
+    <div class="line1 songti">ВОПЛОЩАЯ САМЫЕ</div>
+    <div class="line2 gogol">яркие идеи В ЖИЗНЬ</div>
+    <a href="#" class="btn-outline">РАССЧИТАТЬ СТОИМОСТЬ</a>
   </div>
 </section>
 
-<!-- ====== Секция 2 - Обо мне горизонтальная ====== -->
-<section id="about" class="section-2">
-
-  <!-- Верхняя половина -->
+<!-- ====== Секция 2 ====== -->
+<section class="section-2">
   <div class="section-2-top">
     <div class="grey-rectangle">
-      <h2 class="greeting">ПРИВЕТ, Я -</h2>
-
+      <div class="greeting">ПРИВЕТ, Я -</div>
       <div class="photos">
         <div class="photo-wrapper left">
-          <img src="https://via.placeholder.com/280x375" alt="Фото 1">
+          <img src="photo-left.jpg" alt="Фото слева">
           <div class="photo-frame"></div>
         </div>
         <div class="photo-wrapper right">
-          <img src="https://via.placeholder.com/280x375" alt="Фото 2">
+          <img src="photo-right.jpg" alt="Фото справа">
           <div class="photo-frame"></div>
-          <p class="name">ЮЛИЯ</p>
+          <div class="name">ЮЛИЯ</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Нижняя половина -->
   <div class="section-2-bottom">
     <div class="frame">
-      <img src="https://via.placeholder.com/80x80" alt="Логотип" class="logo-center">
-      <img src="https://via.placeholder.com/80x80" alt="Цветок левый" class="flower-left">
-      <img src="https://via.placeholder.com/80x80" alt="Цветок правый" class="flower-right">
-
+      <img src="logo.jpg" alt="Логотип" class="logo-center">
+      <img src="flower.jpg" alt="Цветок" class="flower-left">
+      <img src="flower.jpg" alt="Цветок" class="flower-right">
       <div class="frame-text">
-        <p>Я была на вашем месте, и знаю и знаю, как важно расслабиться и</p>
-        <p>наслаждаться каждым моментом праздника — обо всем</p>
-        <p>остальном позабочусь я</p>
+        Я была на вашем месте, и знаю и знаю, как важно расслабиться и<br>
+        наслаждаться каждым моментом праздника — обо всем<br>
+        остальном позабочусь я
       </div>
     </div>
   </div>
-
 </section>
 
-<!-- ====== Секция 3 - Обо мне (текст + карусель) ====== -->
-<section id="why-me" class="section-3">
+<!-- ====== Секция 3 ====== -->
+<section id="about-me" class="section-3">
   <div class="section-3-container">
-
-    <!-- Линия слева -->
     <div class="vertical-line"></div>
-
-    <!-- Текст -->
     <div class="section-3-text">
       <h2>Обо мне</h2>
       <p>Меня зовут Быкова Юлия Шухратовна, и я являюсь организатором и координатором свадебных и других мероприятий. Мой опыт в этой сфере позволяет мне успешно планировать и проводить различные события, включая свадьбы, дни рождения и юбилеи.</p>
       <p>Работа с клиентами для меня — это не просто бизнес, а возможность создавать радостные моменты и положительные эмоции. Я верю, что каждый праздник заслуживает быть особенным, и готова приложить все усилия, чтобы это стало реальностью.</p>
     </div>
-
-    <!-- Карусель -->
     <div class="section-3-carousel">
-      <button class="carousel3-btn prev3">&lt;</button>
       <div class="carousel3-track">
-        <div class="carousel3-item"><img src="https://via.placeholder.com/300x400" alt="Фото 1"></div>
-        <div class="carousel3-item"><img src="https://via.placeholder.com/300x400" alt="Фото 2"></div>
-        <div class="carousel3-item"><img src="https://via.placeholder.com/300x400" alt="Фото 3"></div>
+        <div class="carousel3-item"><img src="photo5.jpg" alt=""></div>
+        <div class="carousel3-item"><img src="photo6.jpg" alt=""></div>
       </div>
-      <button class="carousel3-btn next3">&gt;</button>
+      <button class="carousel3-btn prev3">&#10094;</button>
+      <button class="carousel3-btn next3">&#10095;</button>
     </div>
-
   </div>
 </section>
 
-<!-- ====== Секция 4 - Почему я? ====== -->
-<section id="why-choose" class="section-4">
+<!-- ====== Секция 4 ====== -->
+<section id="why-me" class="section-4">
   <div class="section-4-container">
-
     <div class="photo-left">
-      <img src="https://via.placeholder.com/400x800" alt="Фото слева">
+      <img src="photo-left-section4.jpg" alt="">
     </div>
-
     <div class="section-4-text">
-      <h2 class="line1 songti">ПОЧЕМУ</h2>
-      <h2 class="line2 gogol">выбирают</h2>
-      <h2 class="line3 songti">МЕНЯ?</h2>
-
+      <h2 class="line1">ПОЧЕМУ</h2>
+      <h2 class="line2">выбирают</h2>
+      <h2 class="line3">МЕНЯ?</h2>
       <ul class="benefits">
-        <li>ИНДИВИДУАЛЬНЫЙ ПОДХОД</li>
-        <li>ПРОФЕССИОНАЛИЗМ И ОПЫТ</li>
-        <li>ГИБКИЕ ПАКЕТЫ УСЛУГ</li>
-        <li>ВЫСОКОЕ КАЧЕСТВО УСЛУГ</li>
-        <li>УНИКАЛЬНОСТЬ И КРЕАТИВНОСТЬ</li>
+        <li>Индивидуальный подход</li>
+        <li>Профессионализм и опыт</li>
+        <li>Гибкие пакеты услуг</li>
+        <li>Высокое качество услуг</li>
+        <li>Уникальность и креативность</li>
       </ul>
-
       <p class="bottom-text">Со мной ваше мероприятие станет не просто торжеством, а настоящим</p>
       <p class="bottom-text">произведением искусства, созданным специально для вас</p>
     </div>
-
   </div>
-</section>
-
-<!-- ====== Секции 5-9 (костяк) ====== -->
-<section id="services" class="section-5">
-  <h2>УСЛУГИ</h2>
-  <p>Описание услуг свадебного агентства.</p>
-</section>
-
-<section id="offers" class="section-6">
-  <h2>ПРЕДЛОЖЕНИЯ</h2>
-  <p>Описание специальных предложений.</p>
-</section>
-
-<section id="booking" class="section-7">
-  <h2>БРОНЬ</h2>
-  <p>Кнопка перехода в Telegram для брони.</p>
-</section>
-
-<section class="section-8">
-  <h2>Секция 8</h2>
-</section>
-
-<section class="section-9">
-  <h2>Секция 9</h2>
 </section>
 
 <script src="js/main.js"></script>

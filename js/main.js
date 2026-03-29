@@ -1,47 +1,57 @@
-// ====== Карусель секции 1 ======
+// ====== Секция 1 - Главная карусель ======
 const track = document.querySelector('.carousel-track');
 const items = Array.from(track.children);
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-let currentIndex = 1;
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
+let currentIndex = 0;
 
 function updateCarousel() {
-  items.forEach((item,index)=>{
-    item.classList.remove('center');
-    if(index===currentIndex) item.classList.add('center');
+  items.forEach((item, index) => {
+    if(index === currentIndex) {
+      item.classList.add('center');
+    } else {
+      item.classList.remove('center');
+    }
   });
-  const offset = items[currentIndex].offsetLeft - track.offsetWidth/2 + items[currentIndex].offsetWidth/2;
-  track.style.transform = `translateX(${-offset}px)`;
+  const slideWidth = items[0].getBoundingClientRect().width + 20; // 20px margin
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
-prevBtn.addEventListener('click',()=>{
-  currentIndex=(currentIndex-1+items.length)%items.length;
-  updateCarousel();
-});
-nextBtn.addEventListener('click',()=>{
-  currentIndex=(currentIndex+1)%items.length;
-  updateCarousel();
-});
-window.addEventListener('load',updateCarousel);
-window.addEventListener('resize',updateCarousel);
 
-// ====== Карусель секции 3 ======
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+});
+
+updateCarousel();
+
+
+// ====== Секция 3 - Карусель Фото ======
 const track3 = document.querySelector('.carousel3-track');
 const items3 = Array.from(track3.children);
-const prev3 = document.querySelector('.prev3');
-const next3 = document.querySelector('.next3');
+const prev3 = document.querySelector('.carousel3-btn.prev3');
+const next3 = document.querySelector('.carousel3-btn.next3');
+
 let currentIndex3 = 0;
 
 function updateCarousel3() {
-  const offset = items3[currentIndex3].offsetLeft;
-  track3.style.transform = `translateX(${-offset}px)`;
+  const slideWidth = items3[0].getBoundingClientRect().width + 20;
+  track3.style.transform = `translateX(-${currentIndex3 * slideWidth}px)`;
 }
-prev3.addEventListener('click', ()=>{
+
+prev3.addEventListener('click', () => {
   currentIndex3 = (currentIndex3 - 1 + items3.length) % items3.length;
   updateCarousel3();
 });
-next3.addEventListener('click', ()=>{
+
+next3.addEventListener('click', () => {
   currentIndex3 = (currentIndex3 + 1) % items3.length;
   updateCarousel3();
 });
-window.addEventListener('load', updateCarousel3);
-window.addEventListener('resize', updateCarousel3);
+
+updateCarousel3();
