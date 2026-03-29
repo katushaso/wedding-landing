@@ -1,4 +1,4 @@
-/* Основные настройки */
+/* ====== Общие стили ====== */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body, html {
     color: #fff;
   }
   
-  /* Верхнее меню */
+  /* ====== Hero (секция 1) ====== */
   .hero__header {
     display: flex;
     justify-content: space-between;
@@ -21,124 +21,53 @@ body, html {
     gap: 30px;
   }
   
-  .menu-center {
-    text-align: center;
-  }
+  .menu-center { text-align: center; }
   
-  .hero__name {
-    font-family: 'Songti TC', serif;
-    font-weight: 700;
-    font-size: 48px;
-    margin: 0;
-  }
+  .hero__name { font-family: 'Songti TC', serif; font-weight: 700; font-size: 48px; margin:0; }
+  .hero__subtitle { font-family: 'Montserrat', sans-serif; font-weight:500; font-size:18px; margin:5px 0 0 0; }
+  .menu-links-left a, .menu-links-right a { font-family: 'Songti TC', serif; font-size:16px; color:#fff; text-decoration:none; margin:0 10px; }
+  .header-line { border:0.5px solid #fff; margin:0 50px; }
   
-  .hero__subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 5px 0 0 0;
-  }
+  .carousel-container { position: relative; display:flex; align-items:center; justify-content:center; margin:50px 0; }
+  .carousel { overflow:hidden; width:80%; }
+  .carousel-track { display:flex; transition:transform 0.5s ease; gap:20px; }
+  .carousel-item { flex:0 0 30%; opacity:0.75; transition:all 0.5s ease; }
+  .carousel-item.center { transform: scale(1.2); opacity:1; }
+  .carousel-item img { width:100%; display:block; }
+  .carousel-btn { position:absolute; top:50%; transform:translateY(-50%); background:none; color:#fff; border:1px solid #fff; font-size:24px; padding:10px 20px; cursor:pointer; }
+  .prev { left:0; } .next { right:0; }
   
-  .menu-links-left a,
-  .menu-links-right a {
-    font-family: 'Songti TC', serif;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
+  .hero-text { text-align:center; margin-bottom:50px; }
+  .line1, .line2 { margin:5px 0; }
+  .songti { font-family: 'Songti TC', serif; font-size:36px; font-weight:500; }
+  .gogol { font-family: 'Gogol', sans-serif; font-size:36px; }
+  .btn-outline { display:inline-block; padding:14px 28px; border:1px solid #fff; color:#fff; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:700; border-radius:50px; margin-top:20px; }
   
-  /* Линия под шапкой */
-  .header-line {
-    border: 0.5px solid #fff;
-    margin: 0 50px;
-  }
+  /* ====== Секция 2 ====== */
+  .section-2 { display:flex; background-color:#F3F4EE; padding:80px 50px; gap:40px; color:#222; }
+  .section-2-left { flex:1; position:relative; }
+  .grey-rectangle { background-color:#CFCFCD; width:100%; height:594px; position:relative; overflow:visible; }
+  .greeting { font-family:'Vollkorn', serif; font-size:48px; margin:20px; color:#222; }
+  .photos { position:relative; width:100%; height:100%; }
+  .photo-wrapper { position:absolute; display:flex; flex-direction:column; align-items:center; }
+  .photo-wrapper img { width:280px; height:375px; object-fit:cover; transform-origin:center; }
+  .photo-wrapper.left { top:50px; left:50px; transform:rotate(15.71deg); }
+  .photo-wrapper.right { top:150px; left:220px; transform:rotate(-11.98deg); }
+  .photo-frame { width:100%; height:50px; background-color:#fff; box-shadow:0 4px 10px rgba(0,0,0,0.3); margin-top:-50px; z-index:-1; }
+  .photo-wrapper.right .name { position:absolute; bottom:10px; right:-10px; font-family:'Vollkorn', serif; font-size:36px; color:#222; }
   
-  /* Карусель */
-  .carousel-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0;
-  }
+  .section-2-right { flex:1; display:flex; justify-content:center; align-items:center; position:relative; }
+  .frame { position:relative; width:100%; max-width:600px; height:594px; border:8px solid #708268; display:flex; justify-content:center; align-items:center; flex-direction:column; background-color:transparent; }
+  .logo-center { position:absolute; top:-40px; left:50%; transform:translateX(-50%); width:80px; height:80px; }
+  .logo-left { position:absolute; top:0; left:0; width:80px; height:80px; transform:scaleY(-1) scaleX(-1); }
+  .logo-right { position:absolute; top:0; right:0; width:80px; height:80px; transform:scaleY(-1) scaleX(-1); }
+  .frame-text { text-align:center; font-family:'Montserrat', sans-serif; font-size:18px; line-height:1.5; }
   
-  .carousel {
-    overflow: hidden;
-    width: 80%;
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 20px;
-  }
-  
-  .carousel-item {
-    flex: 0 0 30%;
-    opacity: 0.75;
-    transition: all 0.5s ease;
-  }
-  
-  .carousel-item.center {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    display: block;
-  }
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    color: #fff;
-    border: 1px solid #fff;
-    font-size: 24px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  /* Текст под каруселью */
-  .hero-text {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .line1, .line2 {
-    margin: 5px 0;
-  }
-  
-  .songti {
-    font-family: 'Songti TC', serif;
-    font-size: 36px;
-    font-weight: 500;
-  }
-  
-  .gogol {
-    font-family: 'Gogol', sans-serif;
-    font-size: 36px;
-  }
-  
-  .btn-outline {
-    display: inline-block;
-    padding: 14px 28px;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    border-radius: 50px;
-    margin-top: 20px;
+  /* ====== Секции 3-9 (костяк) ====== */
+  .section-3, .section-4, .section-5, .section-6, .section-7, .section-8, .section-9 {
+    padding:100px 50px;
+    text-align:center;
+    background-color:#fff;
+    color:#222;
+    border-bottom:1px solid #ccc;
   }
