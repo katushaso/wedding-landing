@@ -43,25 +43,103 @@ body, html {
   .gogol { font-family: 'Gogol', sans-serif; font-size:36px; }
   .btn-outline { display:inline-block; padding:14px 28px; border:1px solid #fff; color:#fff; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:700; border-radius:50px; margin-top:20px; }
   
-  /* ====== Секция 2 ====== */
-  .section-2 { display:flex; background-color:#F3F4EE; padding:80px 50px; gap:40px; color:#222; }
-  .section-2-left { flex:1; position:relative; }
-  .grey-rectangle { background-color:#CFCFCD; width:100%; height:594px; position:relative; overflow:visible; }
-  .greeting { font-family:'Vollkorn', serif; font-size:48px; margin:20px; color:#222; }
-  .photos { position:relative; width:100%; height:100%; }
-  .photo-wrapper { position:absolute; display:flex; flex-direction:column; align-items:center; }
-  .photo-wrapper img { width:280px; height:375px; object-fit:cover; transform-origin:center; }
-  .photo-wrapper.left { top:50px; left:50px; transform:rotate(15.71deg); }
-  .photo-wrapper.right { top:150px; left:220px; transform:rotate(-11.98deg); }
-  .photo-frame { width:100%; height:50px; background-color:#fff; box-shadow:0 4px 10px rgba(0,0,0,0.3); margin-top:-50px; z-index:-1; }
-  .photo-wrapper.right .name { position:absolute; bottom:10px; right:-10px; font-family:'Vollkorn', serif; font-size:36px; color:#222; }
+  /* ====== Секция 2 - горизонтальное деление ====== */
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4EE;
+    gap: 60px;
+    padding: 80px 50px;
+    color: #222;
+  }
   
-  .section-2-right { flex:1; display:flex; justify-content:center; align-items:center; position:relative; }
-  .frame { position:relative; width:100%; max-width:600px; height:594px; border:8px solid #708268; display:flex; justify-content:center; align-items:center; flex-direction:column; background-color:transparent; }
-  .logo-center { position:absolute; top:-40px; left:50%; transform:translateX(-50%); width:80px; height:80px; }
-  .logo-left { position:absolute; top:0; left:0; width:80px; height:80px; transform:scaleY(-1) scaleX(-1); }
-  .logo-right { position:absolute; top:0; right:0; width:80px; height:80px; transform:scaleY(-1) scaleX(-1); }
-  .frame-text { text-align:center; font-family:'Montserrat', sans-serif; font-size:18px; line-height:1.5; }
+  .section-2-top {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grey-rectangle {
+    background-color: #CFCFCD;
+    width: 1229px;
+    height: 594px;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .greeting { font-family: 'Vollkorn', serif; font-size:48px; margin:20px; color:#222; }
+  
+  .photos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .photo-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo-wrapper img {
+    width: 280px;
+    height: 375px;
+    object-fit: cover;
+    transform-origin: center;
+  }
+  
+  .photo-wrapper.left {
+    top: 50px;
+    left: 50px;
+    transform: rotate(15.71deg);
+  }
+  
+  .photo-wrapper.right {
+    top: 150px;
+    left: 500px;
+    transform: rotate(-11.98deg);
+  }
+  
+  .photo-frame {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-top: -50px;
+    z-index: -1;
+  }
+  
+  .photo-wrapper.right .name {
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    font-family: 'Vollkorn', serif;
+    font-size: 36px;
+    color: #222;
+  }
+  
+  .section-2-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .frame {
+    position: relative;
+    width: 1229px;
+    height: 594px;
+    border: 8px solid #708268;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  
+  .logo-center { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 80px; }
+  .flower-left { position: absolute; bottom: 0; left: 0; width: 80px; height: 80px; }
+  .flower-right { position: absolute; top: 0; right: 0; width: 80px; height: 80px; }
+  
+  .frame-text { text-align: center; font-family:'Montserrat', sans-serif; font-size:18px; line-height:1.5; color:#222; }
   
   /* ====== Секции 3-9 (костяк) ====== */
   .section-3, .section-4, .section-5, .section-6, .section-7, .section-8, .section-9 {
