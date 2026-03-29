@@ -13,7 +13,6 @@ function updateCarousel() {
   const offset = items[currentIndex].offsetLeft - track.offsetWidth/2 + items[currentIndex].offsetWidth/2;
   track.style.transform = `translateX(${-offset}px)`;
 }
-
 prevBtn.addEventListener('click',()=>{
   currentIndex=(currentIndex-1+items.length)%items.length;
   updateCarousel();
@@ -36,16 +35,13 @@ function updateCarousel3() {
   const offset = items3[currentIndex3].offsetLeft;
   track3.style.transform = `translateX(${-offset}px)`;
 }
-
 prev3.addEventListener('click', ()=>{
   currentIndex3 = (currentIndex3 - 1 + items3.length) % items3.length;
   updateCarousel3();
 });
-
 next3.addEventListener('click', ()=>{
   currentIndex3 = (currentIndex3 + 1) % items3.length;
   updateCarousel3();
 });
-
 window.addEventListener('load', updateCarousel3);
 window.addEventListener('resize', updateCarousel3);
