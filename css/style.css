@@ -1,79 +1,287 @@
-/* ====== Общие стили ====== */
-* { box-sizing:border-box; margin:0; padding:0; }
-body, html { font-family:'Montserrat', sans-serif; scroll-behavior:smooth; }
-img { display:block; max-width:100%; }
-a { text-decoration:none; color:inherit; }
-button { cursor:pointer; border:none; background:none; }
-
-/* ====== Секция 1 ====== */
-.hero { height:100vh; background-color:#06090E; color:#fff; position:relative; display:flex; flex-direction:column; align-items:center; }
-.hero__header { display:flex; justify-content:space-between; align-items:center; width:90%; padding:20px 0; position:relative; z-index:2; }
-.menu-left, .menu-center, .menu-right { display:flex; align-items:center; }
-.menu-links-left a, .menu-links-right a { margin:0 10px; font-family:'Songti TC', serif; font-weight:400; color:#fff; }
-.hero__name { font-family:'Songti TC', serif; font-weight:700; font-size:48px; text-align:center; }
-.hero__subtitle { font-family:'Montserrat', sans-serif; font-size:20px; text-align:center; margin-top:5px; }
-.header-line { border:0; border-top:1px solid #fff; width:90%; margin:0 auto; }
-
-/* ====== Карусель секции 1 ====== */
-.carousel-container { position:relative; margin:40px 0; width:90%; overflow:hidden; }
-.carousel { overflow:hidden; }
-.carousel-track { display:flex; transition:transform 0.5s ease; }
-.carousel-item { flex:0 0 auto; margin:0 10px; opacity:0.75; transition:all 0.3s ease; }
-.carousel-item.center { opacity:1; transform:scale(1.2); }
-.carousel-item img { display:block; width:100%; height:auto; border-radius:10px; }
-.carousel-btn { position:absolute; top:50%; transform:translateY(-50%); font-size:36px; color:#fff; background:rgba(0,0,0,0.3); padding:10px; border-radius:50%; }
-.prev { left:0; } .next { right:0; }
-
-/* ====== Hero текст ====== */
-.hero-text { text-align:center; margin-top:20px; color:#fff; }
-.hero-text .line1 { font-size:32px; }
-.hero-text .line2 { font-size:28px; margin-top:5px; }
-.songti { font-family:'Songti TC', serif; font-weight:700; }
-.gogol { font-family:'Gogol', serif; font-weight:400; }
-.btn-outline { display:inline-block; padding:10px 30px; border:1px solid #fff; border-radius:30px; color:#fff; margin-top:20px; font-family:'Montserrat', sans-serif; font-weight:700; }
-
-/* ====== Секция 2 ====== */
-.section-2 { background-color:#F3F4EE; padding:40px 0; display:flex; flex-direction:column; gap:40px; }
-.section-2-top { display:flex; justify-content:center; }
-.grey-rectangle { background-color:#CFCFCD; width:1229px; height:594px; position:relative; padding:40px; }
-.greeting { font-family:'Vollkorn', serif; font-size:48px; position:absolute; top:20px; left:20px; }
-.photos { position:relative; display:flex; justify-content:center; gap:40px; margin-top:80px; }
-.photo-wrapper { position:relative; }
-.photo-wrapper.left img { transform:rotate(15.71deg); width:280px; height:375px; object-fit:cover; z-index:2; }
-.photo-wrapper.right img { transform:rotate(-11.98deg); width:280px; height:375px; object-fit:cover; z-index:2; }
-.photo-frame { position:absolute; bottom:-20px; left:0; width:100%; height:60px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.3); z-index:1; }
-.photo-wrapper.right .name { position:absolute; bottom:10px; right:0; font-family:'Vollkorn', serif; font-size:24px; font-weight:700; }
-.section-2-bottom { display:flex; justify-content:center; }
-.frame { position:relative; width:1229px; border:8px solid #708268; padding:60px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:20px; }
-.logo-center { position:absolute; top:0; left:50%; transform:translateX(-50%); width:80px; height:80px; object-fit:cover; }
-.flower-left { position:absolute; bottom:0; left:0; width:80px; height:80px; object-fit:cover; transform:rotate(180deg); }
-.flower-right { position:absolute; top:0; right:0; width:80px; height:80px; object-fit:cover; }
-.frame-text { text-align:center; font-family:'Montserrat', sans-serif; font-size:20px; line-height:1.5; }
-
-/* ====== Секция 3 ====== */
-.section-3 { background-color:#F6F5F3; padding:40px 0; display:flex; justify-content:center; }
-.section-3-container { display:flex; width:90%; gap:20px; }
-.vertical-line { width:2px; background-color:rgba(0,0,0,0.8); }
-.section-3-text { flex:3; padding:0 20px; }
-.section-3-text h2 { font-family:'Vollkorn', serif; font-size:36px; margin-bottom:20px; }
-.section-3-text p { margin-bottom:15px; font-family:'Montserrat', sans-serif; font-size:18px; }
-.section-3-carousel { flex:2; position:relative; overflow:hidden; }
-.carousel3-track { display:flex; transition:transform 0.5s ease; }
-.carousel3-item { flex:0 0 auto; margin:0 10px; }
-.carousel3-item img { width:100%; height:auto; border-radius:10px; }
-.carousel3-btn { position:absolute; top:50%; transform:translateY(-50%); font-size:24px; color:#000; background:rgba(255,255,255,0.7); padding:5px 10px; border-radius:50%; }
-.prev3 { left:0; } .next3 { right:0; }
-
-/* ====== Секция 4 ====== */
-.section-4 { display:flex; height:80vh; background-color:#263321; color:#fff; }
-.section-4-container { display:flex; width:90%; margin:auto; }
-.photo-left { flex:0 0 35%; }
-.photo-left img { width:100%; height:100%; object-fit:cover; opacity:0.8; }
-.section-4-text { flex:1; padding:40px; display:flex; flex-direction:column; justify-content:center; }
-.section-4-text h2 { margin:0; }
-.line1 { font-family:'Songti TC', serif; font-size:64px; }
-.line2 { font-family:'Gogol', serif; font-size:48px; }
-.line3 { font-family:'Songti TC', serif; font-size:64px; margin-bottom:20px; }
-.benefits { list-style:none; padding:0; margin:20px 0; font-family:'Vollkorn', serif; font-variant:small-caps; }
-.benefits li { margin-bottom:10px; }
-.bottom-text { font-family:'Montserrat', sans-serif; font-size:18px; margin:5px 0; }
+/* Общие стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Секция 1 */
+  .section1 {
+    background-color: #06090E;
+    color: #FFFFFF;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .menu-left nav a {
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Songti TC', serif;
+  }
+  
+  .menu-center h1 {
+    font-family: 'Songti TC', serif;
+    font-weight: bold;
+    font-size: 64px;
+    margin: 0;
+  }
+  
+  .menu-center p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .carousel-item {
+    margin: 0 10px;
+    opacity: 0.75;
+    transition: all 0.5s ease;
+  }
+  
+  .carousel-item.center {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .carousel-item img {
+    width: 531px;
+    height: 524px;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  
+  .carousel-btn.prev { left: 10px; }
+  .carousel-btn.next { right: 10px; }
+  
+  .section1-text {
+    margin-top: 30px;
+  }
+  
+  .section1-text .line1 {
+    font-family: 'Songti TC', serif;
+    font-size: 48px;
+  }
+  
+  .section1-text .line1 span {
+    font-family: 'Gogol', sans-serif;
+  }
+  
+  .section1-text .line2 {
+    font-family: 'Songti TC', serif;
+    font-size: 40px;
+  }
+  
+  .outline-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Секция 2 */
+  .section2 {
+    background-color: #F3F4EE;
+  }
+  
+  .top-half, .bottom-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gray-rect {
+    width: 1229px;
+    height: 594px;
+    background-color: #CFCFCD;
+    position: relative;
+  }
+  
+  .greeting {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Vollkorn', serif;
+    font-size: 60px;
+  }
+  
+  .photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .photo-left img { transform: rotate(15.71deg); }
+  .photo-right img { transform: rotate(-11.98deg); }
+  
+  .polaroid {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 280px;
+    height: 100px;
+    bottom: -20px;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+  
+  .name-label {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-family: 'Vollkorn', serif;
+    font-size: 36px;
+  }
+  
+  .frame {
+    width: 1229px;
+    height: 594px;
+    border: 8px solid #708268;
+    position: relative;
+    margin: 50px 0;
+  }
+  
+  .frame-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+  
+  .flower.top-right { position: absolute; top: 0; right: 0; width: 80px; }
+  .flower.bottom-left { position: absolute; bottom: 0; left: 0; width: 80px; }
+  
+  .frame-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+  }
+  
+  /* Секция 3 */
+  .section3 {
+    background-color: #F6F5F3;
+    display: flex;
+    padding: 50px;
+  }
+  
+  .text-left {
+    flex: 3;
+    padding-right: 20px;
+  }
+  
+  .line-vertical {
+    width: 2px;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .carousel3-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel3-track {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel3-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  /* Секция 4 */
+  .section4 {
+    display: flex;
+    background-color: #263321;
+    padding: 50px;
+  }
+  
+  .section4-left { flex: 1; }
+  
+  .why-title1 { font-family: 'Songti TC', serif; font-size: 80px; margin: 0; color: #FFFFFF; }
+  .why-title2 { display: flex; gap: 10px; align-items: baseline; font-size: 60px; margin: 10px 0; }
+  .why-title2 .choose { font-family: 'Gogol', sans-serif; }
+  .why-title2 .me { font-family: 'Songti TC', serif; font-weight: bold; }
+  
+  .why-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+    font-family: 'Vollkorn SC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+  }
+  
+  .why-list li::before {
+    content: "— ";
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  .why-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 30px;
+    color: #FFFFFF;
+  }
+  
+  .section4-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section4-photo { max-width: 100%; height: auto; }

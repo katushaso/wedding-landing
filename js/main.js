@@ -14,7 +14,7 @@ function updateCarousel() {
       item.classList.remove('center');
     }
   });
-  const slideWidth = items[0].getBoundingClientRect().width + 20; // 20px margin
+  const slideWidth = items[0].getBoundingClientRect().width + 20;
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
@@ -29,7 +29,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 updateCarousel();
-
 
 // ====== Секция 3 - Карусель Фото ======
 const track3 = document.querySelector('.carousel3-track');
